@@ -3,15 +3,16 @@
 var array = function (){
 	array = new Array;
 	_.extend(array,newProperities)
+	return array;
 }
 
 
 var newProperities={}
 
-newProperities.first =function(array){
+newProperities.first =function(){
 	return array[0];
 }
 
-newProperities.last = function(array){
-	return array[array.length];
+newProperities.last = function(){
+	return array[array.length-1];
 }
